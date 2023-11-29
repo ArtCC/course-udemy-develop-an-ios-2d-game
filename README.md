@@ -1,2 +1,3 @@
-# course-udemy-develop-an-ios-2d-game
-Repository for the Udemy course "Develop a 2D game with Swift and SpriteKit for iOS".
+# Curso de Udemy: "Desarrolla un juego 2D con Swift y SpriteKit para iOS"
+
+Repositorio con las lecciones del curso.
