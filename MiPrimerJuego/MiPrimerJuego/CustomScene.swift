@@ -23,13 +23,17 @@ class CustomScene: SKScene {
 
         addChild(player)
 
+        player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
+        player.physicsBody?.affectedByGravity = false
+
+        /**
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             player.removeFromParent()
 
             self.explosion("PlayerExplosion", in: player.position) {
                 print("Has muerto.")
             }
-        }
+        }*/
     }
 
     func touchDown(atPoint pos : CGPoint) {
