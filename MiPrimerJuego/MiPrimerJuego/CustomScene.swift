@@ -26,6 +26,15 @@ class CustomScene: SKScene {
         player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
         player.physicsBody?.affectedByGravity = false
 
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            let moveAction = SKAction.move(to: CGPoint(x: player.position.x + 200, y: player.position.y), duration: 2.0)
+            let rotateAction = SKAction.rotate(byAngle: .pi, duration: 1.0)
+            let returnAction = SKAction.move(to: CGPoint(x: player.position.x, y: player.position.y), duration: 2.0)
+            let sequenceAction = SKAction.sequence([moveAction, rotateAction, returnAction, rotateAction])
+
+            player.run(sequenceAction)
+        }
+
         /**
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             player.removeFromParent()
