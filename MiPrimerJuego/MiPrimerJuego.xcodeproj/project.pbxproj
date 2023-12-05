@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8063E4F12B1E1E3300986A24 /* CustomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8063E4F02B1E1E3300986A24 /* CustomScene.swift */; };
+		80B3CAEA2B1F5C49006EA0FF /* PlayerExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80B3CAE92B1F5C49006EA0FF /* PlayerExplosion.atlas */; };
 		80F08A622B1DF5BA0094522F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F08A612B1DF5BA0094522F /* AppDelegate.swift */; };
 		80F08A642B1DF5BA0094522F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80F08A632B1DF5BA0094522F /* GameScene.sks */; };
 		80F08A662B1DF5BA0094522F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80F08A652B1DF5BA0094522F /* Actions.sks */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		8063E4F02B1E1E3300986A24 /* CustomScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScene.swift; sourceTree = "<group>"; };
+		80B3CAE92B1F5C49006EA0FF /* PlayerExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerExplosion.atlas; sourceTree = "<group>"; };
 		80F08A5E2B1DF5BA0094522F /* MiPrimerJuego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiPrimerJuego.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F08A612B1DF5BA0094522F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F08A632B1DF5BA0094522F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				80F08A612B1DF5BA0094522F /* AppDelegate.swift */,
 				80F08A672B1DF5BA0094522F /* GameScene.swift */,
 				8063E4F02B1E1E3300986A24 /* CustomScene.swift */,
+				80B3CAE92B1F5C49006EA0FF /* PlayerExplosion.atlas */,
 				80F08A692B1DF5BA0094522F /* GameViewController.swift */,
 				80F08A632B1DF5BA0094522F /* GameScene.sks */,
 				80F08A652B1DF5BA0094522F /* Actions.sks */,
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B3CAEA2B1F5C49006EA0FF /* PlayerExplosion.atlas in Resources */,
 				80F08A6D2B1DF5BA0094522F /* Main.storyboard in Resources */,
 				80F08A642B1DF5BA0094522F /* GameScene.sks in Resources */,
 				80F08A6F2B1DF5BB0094522F /* Assets.xcassets in Resources */,

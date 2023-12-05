@@ -10,17 +10,26 @@ import GameplayKit
 
 class CustomScene: SKScene {
     override func didMove(to view: SKView) {
+        backgroundColor = .black
+
         guard let image = UIImage(named: "img_ship") else {
             return
         }
         let texture = SKTexture(image: image)
         let player = SKSpriteNode(texture: texture)
-
         let position = CGPoint(x: size.width * 0.15, y: size.height * 0.5)
 
         player.position = position
 
         addChild(player)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            player.removeFromParent()
+
+            self.explosion("PlayerExplosion", in: player.position) {
+                print("Has muerto.")
+            }
+        }
     }
 
     func touchDown(atPoint pos : CGPoint) {
@@ -49,5 +58,35 @@ class CustomScene: SKScene {
     }
 
     override func update(_ currentTime: TimeInterval) {
+    }
+
+    // MARK: - Private
+
+    private func explosion(_ texture: String, in position: CGPoint, completion: (() -> Void)? = nil) {
+        let animatedAtlas = SKTextureAtlas(named: texture)
+        let numImages = animatedAtlas.textureNames.count
+
+        var frames: [SKTexture] = []
+
+        for i in 1...numImages {
+            let textureName = String(format: "texture_%d", i)
+
+            frames.append(animatedAtlas.textureNamed(textureName))
+        }
+
+        var explosion = SKSpriteNode()
+
+        let firstTexture = frames[0]
+
+        explosion = SKSpriteNode(texture: firstTexture)
+        explosion.position = position
+
+        addChild(explosion)
+
+        explosion.run(SKAction.animate(with: frames, timePerFrame: 0.1, resize: false, restore: true)) {
+            explosion.removeFromParent()
+
+            completion?()
+        }
     }
 }
