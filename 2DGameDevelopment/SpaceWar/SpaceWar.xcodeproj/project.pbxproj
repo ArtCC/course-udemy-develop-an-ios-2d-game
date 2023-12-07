@@ -8,25 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		80C5CB122B224412002B0F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5CB112B224412002B0F03 /* AppDelegate.swift */; };
-		80C5CB142B224412002B0F03 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB132B224412002B0F03 /* GameScene.sks */; };
-		80C5CB162B224412002B0F03 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB152B224412002B0F03 /* Actions.sks */; };
-		80C5CB182B224412002B0F03 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5CB172B224412002B0F03 /* GameScene.swift */; };
 		80C5CB1A2B224412002B0F03 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5CB192B224412002B0F03 /* GameViewController.swift */; };
 		80C5CB1D2B224412002B0F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB1B2B224412002B0F03 /* Main.storyboard */; };
 		80C5CB1F2B224412002B0F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB1E2B224412002B0F03 /* Assets.xcassets */; };
 		80C5CB222B224412002B0F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB202B224412002B0F03 /* LaunchScreen.storyboard */; };
+		80C5CB5B2B2247F3002B0F03 /* PlayerNormal.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB4C2B2247F3002B0F03 /* PlayerNormal.atlas */; };
+		80C5CB5C2B2247F3002B0F03 /* EnemyTurbo.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB4D2B2247F3002B0F03 /* EnemyTurbo.atlas */; };
+		80C5CB5D2B2247F3002B0F03 /* BossTurbo.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB4E2B2247F3002B0F03 /* BossTurbo.atlas */; };
+		80C5CB5E2B2247F3002B0F03 /* BossExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB4F2B2247F3002B0F03 /* BossExplosion.atlas */; };
+		80C5CB5F2B2247F3002B0F03 /* PlayerTurbo.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB502B2247F3002B0F03 /* PlayerTurbo.atlas */; };
+		80C5CB602B2247F3002B0F03 /* PlayerExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB512B2247F3002B0F03 /* PlayerExplosion.atlas */; };
+		80C5CB612B2247F3002B0F03 /* Explosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB522B2247F3002B0F03 /* Explosion.atlas */; };
+		80C5CB622B2247F3002B0F03 /* EnemyExplosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB532B2247F3002B0F03 /* EnemyExplosion.atlas */; };
+		80C5CB632B2247F3002B0F03 /* menu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB552B2247F3002B0F03 /* menu.mp3 */; };
+		80C5CB642B2247F3002B0F03 /* space-game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB562B2247F3002B0F03 /* space-game.mp3 */; };
+		80C5CB652B2247F3002B0F03 /* start-level.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB572B2247F3002B0F03 /* start-level.mp3 */; };
+		80C5CB662B2247F3002B0F03 /* enemy-explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB582B2247F3002B0F03 /* enemy-explosion.mp3 */; };
+		80C5CB672B2247F3002B0F03 /* player-explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB592B2247F3002B0F03 /* player-explosion.mp3 */; };
+		80C5CB682B2247F3002B0F03 /* short-laser-gun-shot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB5A2B2247F3002B0F03 /* short-laser-gun-shot.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80C5CB0E2B224412002B0F03 /* SpaceWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C5CB112B224412002B0F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80C5CB132B224412002B0F03 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		80C5CB152B224412002B0F03 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		80C5CB172B224412002B0F03 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		80C5CB192B224412002B0F03 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		80C5CB1C2B224412002B0F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80C5CB1E2B224412002B0F03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80C5CB212B224412002B0F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80C5CB4C2B2247F3002B0F03 /* PlayerNormal.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerNormal.atlas; sourceTree = "<group>"; };
+		80C5CB4D2B2247F3002B0F03 /* EnemyTurbo.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyTurbo.atlas; sourceTree = "<group>"; };
+		80C5CB4E2B2247F3002B0F03 /* BossTurbo.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BossTurbo.atlas; sourceTree = "<group>"; };
+		80C5CB4F2B2247F3002B0F03 /* BossExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BossExplosion.atlas; sourceTree = "<group>"; };
+		80C5CB502B2247F3002B0F03 /* PlayerTurbo.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerTurbo.atlas; sourceTree = "<group>"; };
+		80C5CB512B2247F3002B0F03 /* PlayerExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerExplosion.atlas; sourceTree = "<group>"; };
+		80C5CB522B2247F3002B0F03 /* Explosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Explosion.atlas; sourceTree = "<group>"; };
+		80C5CB532B2247F3002B0F03 /* EnemyExplosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = EnemyExplosion.atlas; sourceTree = "<group>"; };
+		80C5CB552B2247F3002B0F03 /* menu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menu.mp3; sourceTree = "<group>"; };
+		80C5CB562B2247F3002B0F03 /* space-game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "space-game.mp3"; sourceTree = "<group>"; };
+		80C5CB572B2247F3002B0F03 /* start-level.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "start-level.mp3"; sourceTree = "<group>"; };
+		80C5CB582B2247F3002B0F03 /* enemy-explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "enemy-explosion.mp3"; sourceTree = "<group>"; };
+		80C5CB592B2247F3002B0F03 /* player-explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "player-explosion.mp3"; sourceTree = "<group>"; };
+		80C5CB5A2B2247F3002B0F03 /* short-laser-gun-shot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "short-laser-gun-shot.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +82,50 @@
 			isa = PBXGroup;
 			children = (
 				80C5CB112B224412002B0F03 /* AppDelegate.swift */,
-				80C5CB172B224412002B0F03 /* GameScene.swift */,
 				80C5CB192B224412002B0F03 /* GameViewController.swift */,
-				80C5CB132B224412002B0F03 /* GameScene.sks */,
-				80C5CB152B224412002B0F03 /* Actions.sks */,
 				80C5CB202B224412002B0F03 /* LaunchScreen.storyboard */,
 				80C5CB1B2B224412002B0F03 /* Main.storyboard */,
 				80C5CB1E2B224412002B0F03 /* Assets.xcassets */,
+				80C5CB282B22475E002B0F03 /* Resources */,
 			);
 			path = SpaceWar;
+			sourceTree = "<group>";
+		};
+		80C5CB282B22475E002B0F03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80C5CB542B2247F3002B0F03 /* Sounds */,
+				80C5CB4B2B2247F3002B0F03 /* Textures */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80C5CB4B2B2247F3002B0F03 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				80C5CB4C2B2247F3002B0F03 /* PlayerNormal.atlas */,
+				80C5CB4D2B2247F3002B0F03 /* EnemyTurbo.atlas */,
+				80C5CB4E2B2247F3002B0F03 /* BossTurbo.atlas */,
+				80C5CB4F2B2247F3002B0F03 /* BossExplosion.atlas */,
+				80C5CB502B2247F3002B0F03 /* PlayerTurbo.atlas */,
+				80C5CB512B2247F3002B0F03 /* PlayerExplosion.atlas */,
+				80C5CB522B2247F3002B0F03 /* Explosion.atlas */,
+				80C5CB532B2247F3002B0F03 /* EnemyExplosion.atlas */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		80C5CB542B2247F3002B0F03 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				80C5CB552B2247F3002B0F03 /* menu.mp3 */,
+				80C5CB562B2247F3002B0F03 /* space-game.mp3 */,
+				80C5CB572B2247F3002B0F03 /* start-level.mp3 */,
+				80C5CB582B2247F3002B0F03 /* enemy-explosion.mp3 */,
+				80C5CB592B2247F3002B0F03 /* player-explosion.mp3 */,
+				80C5CB5A2B2247F3002B0F03 /* short-laser-gun-shot.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,11 +186,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C5CB642B2247F3002B0F03 /* space-game.mp3 in Resources */,
+				80C5CB5C2B2247F3002B0F03 /* EnemyTurbo.atlas in Resources */,
 				80C5CB1D2B224412002B0F03 /* Main.storyboard in Resources */,
-				80C5CB142B224412002B0F03 /* GameScene.sks in Resources */,
+				80C5CB5E2B2247F3002B0F03 /* BossExplosion.atlas in Resources */,
+				80C5CB682B2247F3002B0F03 /* short-laser-gun-shot.mp3 in Resources */,
+				80C5CB652B2247F3002B0F03 /* start-level.mp3 in Resources */,
 				80C5CB1F2B224412002B0F03 /* Assets.xcassets in Resources */,
+				80C5CB622B2247F3002B0F03 /* EnemyExplosion.atlas in Resources */,
+				80C5CB5D2B2247F3002B0F03 /* BossTurbo.atlas in Resources */,
+				80C5CB5F2B2247F3002B0F03 /* PlayerTurbo.atlas in Resources */,
+				80C5CB602B2247F3002B0F03 /* PlayerExplosion.atlas in Resources */,
 				80C5CB222B224412002B0F03 /* LaunchScreen.storyboard in Resources */,
-				80C5CB162B224412002B0F03 /* Actions.sks in Resources */,
+				80C5CB662B2247F3002B0F03 /* enemy-explosion.mp3 in Resources */,
+				80C5CB5B2B2247F3002B0F03 /* PlayerNormal.atlas in Resources */,
+				80C5CB672B2247F3002B0F03 /* player-explosion.mp3 in Resources */,
+				80C5CB612B2247F3002B0F03 /* Explosion.atlas in Resources */,
+				80C5CB632B2247F3002B0F03 /* menu.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C5CB182B224412002B0F03 /* GameScene.swift in Sources */,
 				80C5CB1A2B224412002B0F03 /* GameViewController.swift in Sources */,
 				80C5CB122B224412002B0F03 /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +368,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q4X55987WE;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Space War";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -327,6 +396,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q4X55987WE;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Space War";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
