@@ -8,8 +8,9 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+final class GameScene: SKScene {
     override func didMove(to view: SKView) {
+        createParallaxBackground()
     }
 
     func touchDown(atPoint pos : CGPoint) {

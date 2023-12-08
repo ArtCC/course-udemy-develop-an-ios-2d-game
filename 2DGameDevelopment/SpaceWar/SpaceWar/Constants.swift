@@ -10,5 +10,6 @@ import Foundation
 enum Constants {
     struct Images {
         static let background = "img_menu_background"
+        static let backgroundGame = "img_background_game"
     }
 }

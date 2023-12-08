@@ -8,7 +8,7 @@
 import SpriteKit
 import GameplayKit
 
-class MainMenuScene: SKScene {
+final class MainMenuScene: SKScene {
     private struct SceneTraits {
         // Margin
         static let titleLabelX: CGFloat = 50
