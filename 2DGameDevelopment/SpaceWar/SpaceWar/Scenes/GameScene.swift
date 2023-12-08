@@ -9,8 +9,13 @@ import SpriteKit
 import GameplayKit
 
 final class GameScene: SKScene {
+    let joystickBase = SKSpriteNode(imageNamed: Constants.Images.joystickBase)
+    let joystick = SKSpriteNode(imageNamed: Constants.Images.joystick)
+    let firePad = SKSpriteNode(imageNamed: Constants.Images.firePad)
+
     override func didMove(to view: SKView) {
         createParallaxBackground()
+        createPlayerControls()
     }
 
     func touchDown(atPoint pos : CGPoint) {

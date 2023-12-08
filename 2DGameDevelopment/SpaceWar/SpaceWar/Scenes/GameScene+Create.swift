@@ -21,4 +21,28 @@ extension GameScene {
             background.movement()
         }
     }
+
+    func createPlayerControls() {
+        joystickBase.name = Nodes.joystickBase.rawValue
+        joystickBase.position = CGPoint(x: joystickBase.size.width / 4 + 50, y: joystickBase.size.height / 4)
+        joystickBase.zPosition = 5
+        joystickBase.alpha = 0.2
+        joystickBase.setScale(0.3)
+
+        joystick.name = Nodes.joystick.rawValue
+        joystick.position = joystickBase.position
+        joystick.zPosition = 6
+        joystick.alpha = 0.5
+        joystick.setScale(0.2)
+
+        firePad.name = Nodes.firePad.rawValue
+        firePad.position = CGPoint(x: size.width - 75, y: joystick.position.y)
+        firePad.zPosition = 6
+        firePad.alpha = 0.5
+        firePad.setScale(0.2)
+
+        addChild(joystickBase)
+        addChild(joystick)
+        addChild(firePad)
+    }
 }
