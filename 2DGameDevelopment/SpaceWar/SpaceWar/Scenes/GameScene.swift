@@ -10,7 +10,7 @@ import GameplayKit
 
 final class GameScene: SKScene {
     var player = Player()
-    
+
     let joystickBase = SKSpriteNode(imageNamed: Constants.Images.joystickBase)
     let joystick = SKSpriteNode(imageNamed: Constants.Images.joystick)
     let firePad = SKSpriteNode(imageNamed: Constants.Images.firePad)
@@ -19,33 +19,27 @@ final class GameScene: SKScene {
         createParallaxBackground()
         createPlayerControls()
         createPlayer()
-    }
 
-    func touchDown(atPoint pos : CGPoint) {
-    }
-
-    func touchMoved(toPoint pos : CGPoint) {
-    }
-
-    func touchUp(atPoint pos : CGPoint) {
-    }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
-    }
-
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-    }
-
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
+        addAsteriods()
+        addEnemies()
     }
 
     override func update(_ currentTime: TimeInterval) {
+    }
+
+    private func addAsteriods() {
+        run(SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.run(createAsteroid),
+                SKAction.wait(forDuration: CGFloat.random(in: 3...5))
+            ])))
+    }
+
+    private func addEnemies() {
+        run(SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.run(createEnemy),
+                SKAction.wait(forDuration: CGFloat.random(in: 1.5...3.0))
+            ])))
     }
 }

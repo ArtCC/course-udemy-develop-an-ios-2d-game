@@ -8,6 +8,8 @@
 import Foundation
 
 enum Nodes: String {
+    case asteroid
+    case enemy
     case firePad
     case joystick
     case joystickBase

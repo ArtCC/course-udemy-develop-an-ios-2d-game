@@ -60,4 +60,27 @@ extension GameScene {
         let moveAction = SKAction.moveBy(x: moveDistance, y: 0, duration: duration)
         player.run(moveAction)
     }
+
+    func createAsteroid() {
+        let texture = SKTexture(imageNamed: Constants.Images.asteroid)
+        let actualY = CGFloat.random(in: texture.size().height / 2...size.height - texture.size().height / 2)
+        let position = CGPoint(x: size.width + texture.size().width / 2, y: actualY)
+
+        let asteroid = Asteroid(texture: texture, position: position)
+        asteroid.name = Nodes.asteroid.rawValue
+
+        addChild(asteroid)
+    }
+
+    func createEnemy() {
+        let texture = SKTexture(imageNamed: Constants.Images.enemy)
+        let enemy = Enemy(texture: texture)
+        let randomY = CGFloat.random(in: enemy.size.height / 2...size.height - enemy.size.height / 2)
+
+        enemy.name = Nodes.enemy.rawValue
+        enemy.position = CGPoint(x: size.width + (enemy.size.width * 2), y: randomY)
+        enemy.movement()
+
+        addChild(enemy)
+    }
 }
