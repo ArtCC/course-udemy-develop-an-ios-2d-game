@@ -11,4 +11,5 @@ enum Nodes: String {
     case firePad
     case joystick
     case joystickBase
+    case player
 }

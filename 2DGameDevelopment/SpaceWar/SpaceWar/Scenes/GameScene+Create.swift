@@ -45,4 +45,19 @@ extension GameScene {
         addChild(joystick)
         addChild(firePad)
     }
+
+    func createPlayer() {
+        let texture = SKTexture(imageNamed: Constants.Images.player)
+        let position = CGPoint(x: -size.width * 0.15, y: size.height * 0.5)
+
+        player = Player(texture: texture, size: texture.size(), position: position)
+        player.name = Nodes.player.rawValue
+
+        addChild(player)
+
+        let moveDistance = CGFloat(250)
+        let duration = TimeInterval(2)
+        let moveAction = SKAction.moveBy(x: moveDistance, y: 0, duration: duration)
+        player.run(moveAction)
+    }
 }
