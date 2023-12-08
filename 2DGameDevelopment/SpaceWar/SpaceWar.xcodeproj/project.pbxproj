@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80BDC6C62B2314E900714272 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC6C52B2314E900714272 /* MainMenuScene.swift */; };
+		80BDC6C92B2317F400714272 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC6C82B2317F400714272 /* Background.swift */; };
+		80BDC6CC2B231FA300714272 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80BDC6CE2B231FA300714272 /* Localizable.strings */; };
+		80BDC6D12B2320FE00714272 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC6D02B2320FE00714272 /* GameScene.swift */; };
+		80BDC6D32B23220800714272 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC6D22B23220800714272 /* Constants.swift */; };
 		80C5CB122B224412002B0F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5CB112B224412002B0F03 /* AppDelegate.swift */; };
 		80C5CB1A2B224412002B0F03 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5CB192B224412002B0F03 /* GameViewController.swift */; };
 		80C5CB1D2B224412002B0F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C5CB1B2B224412002B0F03 /* Main.storyboard */; };
@@ -29,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80BDC6C52B2314E900714272 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		80BDC6C82B2317F400714272 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		80BDC6CD2B231FA300714272 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80BDC6CF2B231FE100714272 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80BDC6D02B2320FE00714272 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		80BDC6D22B23220800714272 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		80C5CB0E2B224412002B0F03 /* SpaceWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C5CB112B224412002B0F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C5CB192B224412002B0F03 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80BDC6C72B2317E000714272 /* SpriteNodes */ = {
+			isa = PBXGroup;
+			children = (
+				80BDC6C82B2317F400714272 /* Background.swift */,
+			);
+			path = SpriteNodes;
+			sourceTree = "<group>";
+		};
 		80C5CB052B224412002B0F03 = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +101,15 @@
 			isa = PBXGroup;
 			children = (
 				80C5CB112B224412002B0F03 /* AppDelegate.swift */,
+				80BDC6D22B23220800714272 /* Constants.swift */,
 				80C5CB192B224412002B0F03 /* GameViewController.swift */,
+				80BDC6D02B2320FE00714272 /* GameScene.swift */,
+				80BDC6C52B2314E900714272 /* MainMenuScene.swift */,
 				80C5CB202B224412002B0F03 /* LaunchScreen.storyboard */,
 				80C5CB1B2B224412002B0F03 /* Main.storyboard */,
 				80C5CB1E2B224412002B0F03 /* Assets.xcassets */,
 				80C5CB282B22475E002B0F03 /* Resources */,
+				80BDC6C72B2317E000714272 /* SpriteNodes */,
 			);
 			path = SpaceWar;
 			sourceTree = "<group>";
@@ -96,6 +119,7 @@
 			children = (
 				80C5CB542B2247F3002B0F03 /* Sounds */,
 				80C5CB4B2B2247F3002B0F03 /* Textures */,
+				80BDC6CE2B231FA300714272 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -170,6 +194,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 80C5CB052B224412002B0F03;
 			productRefGroup = 80C5CB0F2B224412002B0F03 /* Products */;
@@ -199,6 +224,7 @@
 				80C5CB602B2247F3002B0F03 /* PlayerExplosion.atlas in Resources */,
 				80C5CB222B224412002B0F03 /* LaunchScreen.storyboard in Resources */,
 				80C5CB662B2247F3002B0F03 /* enemy-explosion.mp3 in Resources */,
+				80BDC6CC2B231FA300714272 /* Localizable.strings in Resources */,
 				80C5CB5B2B2247F3002B0F03 /* PlayerNormal.atlas in Resources */,
 				80C5CB672B2247F3002B0F03 /* player-explosion.mp3 in Resources */,
 				80C5CB612B2247F3002B0F03 /* Explosion.atlas in Resources */,
@@ -213,14 +239,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80BDC6D12B2320FE00714272 /* GameScene.swift in Sources */,
+				80BDC6C62B2314E900714272 /* MainMenuScene.swift in Sources */,
 				80C5CB1A2B224412002B0F03 /* GameViewController.swift in Sources */,
 				80C5CB122B224412002B0F03 /* AppDelegate.swift in Sources */,
+				80BDC6C92B2317F400714272 /* Background.swift in Sources */,
+				80BDC6D32B23220800714272 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		80BDC6CE2B231FA300714272 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80BDC6CD2B231FA300714272 /* en */,
+				80BDC6CF2B231FE100714272 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		80C5CB1B2B224412002B0F03 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -245,6 +284,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -308,6 +348,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

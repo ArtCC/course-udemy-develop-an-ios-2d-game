@@ -14,22 +14,18 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
+            let scene = MainMenuScene(size: view.bounds.size)
+
             view.ignoresSiblingOrder = true
             view.isMultipleTouchEnabled = true
             view.showsFPS = false
             view.showsNodeCount = false
-        }
-    }
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            return .allButUpsideDown
-        } else {
-            return .all
+            view.presentScene(scene)
         }
     }
 
     override var prefersStatusBarHidden: Bool {
-        return true
+        true
     }
 }
