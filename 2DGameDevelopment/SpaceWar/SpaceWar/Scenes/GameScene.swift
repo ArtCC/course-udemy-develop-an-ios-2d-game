@@ -20,14 +20,14 @@ final class GameScene: SKScene {
         createPlayerControls()
         createPlayer()
 
-        addAsteriods()
+        AddAsteroids()
         addEnemies()
     }
 
     override func update(_ currentTime: TimeInterval) {
     }
 
-    private func addAsteriods() {
+    private func AddAsteroids() {
         run(SKAction.repeatForever(
             SKAction.sequence([
                 SKAction.run(createAsteroid),
