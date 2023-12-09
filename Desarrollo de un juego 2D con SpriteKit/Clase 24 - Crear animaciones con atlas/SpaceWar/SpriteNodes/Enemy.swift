@@ -52,6 +52,22 @@ final class Enemy: SKSpriteNode {
         run(sequence)
     }
 
+    func shot() {
+        let shotDelay = SKAction.wait(forDuration: 1.5)
+        let shotAction = SKAction.run {
+            let texture = SKTexture(imageNamed: Constants.Images.enemyShot)
+            let shot = Shot(texture: texture, position: CGPoint(x: -50.0, y: 0.0), type: .rightToLeft)
+
+            shot.movement()
+
+            self.addChild(shot)
+        }
+        let shotSequence = SKAction.sequence([shotDelay, shotAction])
+        let shotForever = SKAction.repeatForever(shotSequence)
+
+        run(shotForever)
+    }
+
     private func setup() {
         zPosition = 1
     }

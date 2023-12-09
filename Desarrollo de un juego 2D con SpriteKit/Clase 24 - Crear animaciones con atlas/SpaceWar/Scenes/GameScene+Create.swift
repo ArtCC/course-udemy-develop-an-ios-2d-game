@@ -60,6 +60,7 @@ extension GameScene {
         let moveDistance = CGFloat(275)
         let duration = TimeInterval(2)
         let moveAction = SKAction.moveBy(x: moveDistance, y: 0, duration: duration)
+
         player.run(moveAction)
     }
 
@@ -84,6 +85,7 @@ extension GameScene {
 
         enemy.addEngineFire(with: Constants.Textures.enemyTurbo)
         enemy.movement()
+        enemy.shot()
 
         addChild(enemy)
     }
