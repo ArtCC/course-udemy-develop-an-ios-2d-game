@@ -53,7 +53,7 @@ final class Enemy: SKSpriteNode {
     }
 
     func shot() {
-        let shotDelay = SKAction.wait(forDuration: 1.5)
+        let shotDelay = SKAction.wait(forDuration: 2)
         let shotAction = SKAction.run {
             let texture = SKTexture(imageNamed: Constants.Images.enemyShot)
             let shot = Shot(texture: texture, position: CGPoint(x: -50.0, y: 0.0), type: .rightToLeft)
