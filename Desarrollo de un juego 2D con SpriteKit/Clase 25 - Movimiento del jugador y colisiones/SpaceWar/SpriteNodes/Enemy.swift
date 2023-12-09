@@ -56,7 +56,10 @@ final class Enemy: SKSpriteNode {
         let shotDelay = SKAction.wait(forDuration: 2)
         let shotAction = SKAction.run {
             let texture = SKTexture(imageNamed: Constants.Images.enemyShot)
-            let shot = Shot(texture: texture, position: CGPoint(x: -50.0, y: 0.0), type: .rightToLeft)
+            let shot = Shot(texture: texture, 
+                            position: CGPoint(x: -50.0, y: 0.0),
+                            direction: .rightToLeft,
+                            type: .enemy)
 
             shot.movement()
 
@@ -70,5 +73,11 @@ final class Enemy: SKSpriteNode {
 
     private func setup() {
         zPosition = 1
+
+        physicsBody = SKPhysicsBody(rectangleOf: size)
+        physicsBody?.categoryBitMask = PhysicsCategory.enemy
+        physicsBody?.contactTestBitMask = PhysicsCategory.player
+        physicsBody?.collisionBitMask = PhysicsCategory.none
+        physicsBody?.usesPreciseCollisionDetection = true
     }
 }

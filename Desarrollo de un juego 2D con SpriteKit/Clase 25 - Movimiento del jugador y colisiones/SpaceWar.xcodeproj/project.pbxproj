@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		801414792B246F6400E8906E /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801414782B246F6400E8906E /* Shot.swift */; };
+		8058B96B2B24CDC000BDDA9A /* GameScene+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058B96A2B24CDC000BDDA9A /* GameScene+Delegates.swift */; };
+		8058B96D2B24D2C000BDDA9A /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058B96C2B24D2C000BDDA9A /* PhysicsCategory.swift */; };
 		8070A19C2B2379E9006075F5 /* GameScene+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070A19B2B2379E9006075F5 /* GameScene+Touch.swift */; };
 		8070A19E2B237A89006075F5 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070A19D2B237A89006075F5 /* Asteroid.swift */; };
 		8070A1A02B237E55006075F5 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070A19F2B237E55006075F5 /* Enemy.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		801414782B246F6400E8906E /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		8058B96A2B24CDC000BDDA9A /* GameScene+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Delegates.swift"; sourceTree = "<group>"; };
+		8058B96C2B24D2C000BDDA9A /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
 		8070A19B2B2379E9006075F5 /* GameScene+Touch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Touch.swift"; sourceTree = "<group>"; };
 		8070A19D2B237A89006075F5 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
 		8070A19F2B237E55006075F5 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				80C5CB192B224412002B0F03 /* GameViewController.swift */,
 				80BDC6D02B2320FE00714272 /* GameScene.swift */,
 				80BDC6D52B2331AC00714272 /* GameScene+Create.swift */,
+				8058B96A2B24CDC000BDDA9A /* GameScene+Delegates.swift */,
 				8070A19B2B2379E9006075F5 /* GameScene+Touch.swift */,
 				80BDC6C52B2314E900714272 /* MainMenuScene.swift */,
 			);
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				80BDC6D82B233EA600714272 /* Nodes.swift */,
+				8058B96C2B24D2C000BDDA9A /* PhysicsCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,8 +291,10 @@
 				80BDC6C92B2317F400714272 /* Background.swift in Sources */,
 				80BDC6D32B23220800714272 /* Constants.swift in Sources */,
 				8070A1A02B237E55006075F5 /* Enemy.swift in Sources */,
+				8058B96B2B24CDC000BDDA9A /* GameScene+Delegates.swift in Sources */,
 				80BDC6DB2B234C2300714272 /* Player.swift in Sources */,
 				8070A19C2B2379E9006075F5 /* GameScene+Touch.swift in Sources */,
+				8058B96D2B24D2C000BDDA9A /* PhysicsCategory.swift in Sources */,
 				801414792B246F6400E8906E /* Shot.swift in Sources */,
 				80BDC6D92B233EA600714272 /* Nodes.swift in Sources */,
 			);

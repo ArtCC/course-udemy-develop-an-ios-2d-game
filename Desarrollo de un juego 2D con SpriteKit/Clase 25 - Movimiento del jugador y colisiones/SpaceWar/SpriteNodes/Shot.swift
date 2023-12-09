@@ -7,18 +7,23 @@
 
 import SpriteKit
 
-enum MovementShotType {
+enum ShotDirection {
     case rightToLeft
     case leftToRight
 }
 
-final class Shot: SKSpriteNode {
-    private var type: MovementShotType = .leftToRight
+enum SpriteType {
+    case enemy
+    case player
+}
 
-    init(texture: SKTexture, position: CGPoint, type: MovementShotType) {
+final class Shot: SKSpriteNode {
+    private var shotDirection: ShotDirection = .leftToRight
+
+    init(texture: SKTexture, position: CGPoint, direction: ShotDirection, type: SpriteType) {
         super.init(texture: texture, color: .clear, size: texture.size())
 
-        setup(texture, position, type)
+        setup(texture, position, direction, type)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,7 +31,7 @@ final class Shot: SKSpriteNode {
     }
 
     func movement() {
-        let direction = CGVector(dx: type == .leftToRight ? 1.0 : -1.0, dy: 0.0)
+        let direction = CGVector(dx: shotDirection == .leftToRight ? 1.0 : -1.0, dy: 0.0)
         let distance: CGFloat = 750
         let action = SKAction.moveBy(x: direction.dx * distance, y: direction.dy * distance, duration: 1.0)
         let remove = SKAction.removeFromParent()
@@ -34,13 +39,32 @@ final class Shot: SKSpriteNode {
         run(SKAction.sequence([action, remove]))
     }
 
-    private func setup(_ texture: SKTexture, _ position: CGPoint, _ type: MovementShotType) {
+    private func setup(_ texture: SKTexture, _ position: CGPoint, _ direction: ShotDirection, _ type: SpriteType) {
         zPosition = 1
 
         self.position = position
         self.texture = texture
-        self.type = type
+        self.shotDirection = direction
 
         setScale(2.0)
+
+
+
+        switch type {
+        case .enemy:
+            physicsBody = SKPhysicsBody(circleOfRadius: size.width / 2)
+
+            physicsBody?.categoryBitMask = PhysicsCategory.enemyProjectile
+            physicsBody?.contactTestBitMask = PhysicsCategory.player
+            physicsBody?.collisionBitMask = PhysicsCategory.none
+        case .player:
+            physicsBody = SKPhysicsBody(rectangleOf: size)
+            physicsBody?.categoryBitMask = PhysicsCategory.player
+            physicsBody?.contactTestBitMask = PhysicsCategory.enemy
+            physicsBody?.collisionBitMask = PhysicsCategory.none
+        }
+
+        physicsBody?.isDynamic = true
+        physicsBody?.usesPreciseCollisionDetection = true
     }
 }

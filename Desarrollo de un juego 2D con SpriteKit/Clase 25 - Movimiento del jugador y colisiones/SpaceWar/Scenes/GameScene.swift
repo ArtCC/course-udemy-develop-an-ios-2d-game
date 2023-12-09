@@ -18,7 +18,7 @@ final class GameScene: SKScene {
     let joystickBase = SKSpriteNode(imageNamed: Constants.Images.joystickBase)
     let joystick = SKSpriteNode(imageNamed: Constants.Images.joystick)
     let firePad = SKSpriteNode(imageNamed: Constants.Images.firePad)
-
+    
     override func didMove(to view: SKView) {
         createParallaxBackground()
         createPlayerControls()
@@ -26,6 +26,8 @@ final class GameScene: SKScene {
 
         AddAsteroids()
         addEnemies()
+
+        setupPhysics()
     }
 
     override func update(_ currentTime: TimeInterval) {
@@ -33,6 +35,19 @@ final class GameScene: SKScene {
             player.position = CGPointMake(player.position.x - (playerVelocityX * 3),
                                           player.position.y + (playerVelocityY * 3))
         }
+
+        player.normalEnginePlayerIsHidden(joystickIsActive)
+        player.turboEnginePlayerIsHidden(!joystickIsActive)
+    }
+
+    private func setupPhysics() {
+        physicsWorld.gravity = .zero
+        physicsWorld.contactDelegate = self
+
+        physicsBody = SKPhysicsBody(edgeLoopFrom: CGRectMake(CGRectGetMinX(frame),
+                                                             CGRectGetMinY(frame),
+                                                             frame.size.width,
+                                                             frame.size.height))
     }
 
     private func AddAsteroids() {

@@ -17,7 +17,7 @@ extension GameScene {
                     joystickIsActive = CGRectContainsPoint(joystick.frame, touchLocation)
                     selectedNodes[touch] = node
                 } else if node.name == Nodes.firePad.rawValue {
-                    print("Dispara")
+                    player.shot()
                 }
             }
         }

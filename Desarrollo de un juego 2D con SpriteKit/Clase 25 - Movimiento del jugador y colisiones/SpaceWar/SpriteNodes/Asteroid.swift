@@ -23,6 +23,12 @@ final class Asteroid: SKSpriteNode {
 
         self.position = position
 
+        physicsBody = SKPhysicsBody(rectangleOf: size)
+        physicsBody?.isDynamic = true
+        physicsBody?.categoryBitMask = PhysicsCategory.enemy
+        physicsBody?.collisionBitMask = PhysicsCategory.none
+        physicsBody?.usesPreciseCollisionDetection = true
+
         rotate()
     }
 

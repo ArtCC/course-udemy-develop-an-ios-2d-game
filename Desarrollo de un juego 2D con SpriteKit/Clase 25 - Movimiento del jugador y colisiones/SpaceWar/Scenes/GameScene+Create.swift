@@ -54,6 +54,7 @@ extension GameScene {
         player.name = Nodes.player.rawValue
 
         player.addNormalEngineFire(with: Constants.Textures.playerNormalFire)
+        player.addTurboEngineFire(with: Constants.Textures.playerTurboFire)
 
         addChild(player)
 
@@ -61,7 +62,14 @@ extension GameScene {
         let duration = TimeInterval(2)
         let moveAction = SKAction.moveBy(x: moveDistance, y: 0, duration: duration)
 
-        player.run(moveAction)
+        player.run(moveAction) {
+            self.player.physicsBody = SKPhysicsBody(rectangleOf: self.player.size)
+            self.player.physicsBody?.isDynamic = true
+            self.player.physicsBody?.categoryBitMask = PhysicsCategory.player
+            self.player.physicsBody?.contactTestBitMask = PhysicsCategory.enemy
+            self.player.physicsBody?.collisionBitMask = PhysicsCategory.all
+            self.player.physicsBody?.usesPreciseCollisionDetection = true
+        }
     }
 
     func createAsteroid() {
