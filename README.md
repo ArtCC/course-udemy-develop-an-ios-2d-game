@@ -1,6 +1,6 @@
 # Curso de Udemy: "Desarrolla un juego 2D con Swift y SpriteKit para iOS"
 
-## Repositorio con las lecciones del curso.
+Repositorio con las lecciones del curso.
 
 ¡Bienvenido a un emocionante juego del espacio en 2D para iOS desarrollado con SpriteKit! En este juego, los jugadores se convierten en pilotos de naves espaciales con la misión de salvar el universo. La nave espacial se controla con un joystick en pantalla, permitiendo a los jugadores maniobrar por el espacio con habilidad y evitar obstáculos mortales.
 
