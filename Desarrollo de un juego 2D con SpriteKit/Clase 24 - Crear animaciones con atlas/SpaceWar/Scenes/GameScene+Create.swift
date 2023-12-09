@@ -53,9 +53,11 @@ extension GameScene {
         player = Player(texture: texture, size: texture.size(), position: position)
         player.name = Nodes.player.rawValue
 
+        player.addNormalEngineFire(with: Constants.Textures.playerNormalFire)
+
         addChild(player)
 
-        let moveDistance = CGFloat(250)
+        let moveDistance = CGFloat(275)
         let duration = TimeInterval(2)
         let moveAction = SKAction.moveBy(x: moveDistance, y: 0, duration: duration)
         player.run(moveAction)
@@ -79,6 +81,8 @@ extension GameScene {
 
         enemy.name = Nodes.enemy.rawValue
         enemy.position = CGPoint(x: size.width + (enemy.size.width * 2), y: randomY)
+
+        enemy.addEngineFire(with: Constants.Textures.enemyTurbo)
         enemy.movement()
 
         addChild(enemy)

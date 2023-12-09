@@ -18,4 +18,11 @@ enum Constants {
         static let firePad = "img_joystick"
         static let player = "img_ship"
     }
+
+    struct Textures {
+        static let enemyTurbo = "EnemyTurbo"
+        static let playerNormalFire = "PlayerNormal"
+        static let playerTurboFire = "PlayerTurbo"
+        static let texture = "texture_%d"
+    }
 }

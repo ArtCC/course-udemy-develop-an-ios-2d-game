@@ -22,6 +22,27 @@ final class Enemy: SKSpriteNode {
         fatalError("init(coder:) has not been implemented")
     }
 
+    func addEngineFire(with texture: String) {
+        let animatedAtlas = SKTextureAtlas(named: texture)
+        let numImages = animatedAtlas.textureNames.count
+
+        var frames: [SKTexture] = []
+
+        for i in 1...numImages {
+            let textureName = String(format: Constants.Textures.texture, i)
+            frames.append(animatedAtlas.textureNamed(textureName))
+        }
+
+        let firstFrameTexture = frames[0]
+        let turboEnemy = SKSpriteNode(texture: firstFrameTexture)
+        turboEnemy.position = CGPoint(x: (size.width / 2) + 5.0, y: 0.0)
+
+        addChild(turboEnemy)
+
+        turboEnemy.run(SKAction.repeatForever(
+            SKAction.animate(with: frames, timePerFrame: 0.1, resize: false, restore: true)))
+    }
+
     func movement() {
         let duration = CGFloat.random(in: 3...6)
         let moveAction = SKAction.moveTo(x: -size.width / 2, duration: duration)
