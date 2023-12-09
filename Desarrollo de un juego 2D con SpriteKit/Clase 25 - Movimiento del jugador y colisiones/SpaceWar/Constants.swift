@@ -23,6 +23,9 @@ enum Constants {
 
     struct Textures {
         static let enemyTurbo = "EnemyTurbo"
+        static let enemyExplosion = "EnemyExplosion"
+        static let explosion = "Explosion"
+        static let playerExplosion = "PlayerExplosion"
         static let playerNormalFire = "PlayerNormal"
         static let playerTurboFire = "PlayerTurbo"
         static let texture = "texture_%d"

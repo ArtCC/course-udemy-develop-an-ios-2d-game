@@ -48,12 +48,9 @@ final class Shot: SKSpriteNode {
 
         setScale(2.0)
 
-
-
         switch type {
         case .enemy:
             physicsBody = SKPhysicsBody(circleOfRadius: size.width / 2)
-
             physicsBody?.categoryBitMask = PhysicsCategory.enemyProjectile
             physicsBody?.contactTestBitMask = PhysicsCategory.player
             physicsBody?.collisionBitMask = PhysicsCategory.none
