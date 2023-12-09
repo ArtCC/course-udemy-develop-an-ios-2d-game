@@ -10,6 +10,7 @@
 		801414792B246F6400E8906E /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801414782B246F6400E8906E /* Shot.swift */; };
 		8058B96B2B24CDC000BDDA9A /* GameScene+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058B96A2B24CDC000BDDA9A /* GameScene+Delegates.swift */; };
 		8058B96D2B24D2C000BDDA9A /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058B96C2B24D2C000BDDA9A /* PhysicsCategory.swift */; };
+		8058B96F2B24E2D900BDDA9A /* GameScene+Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058B96E2B24E2D900BDDA9A /* GameScene+Collisions.swift */; };
 		8070A19C2B2379E9006075F5 /* GameScene+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070A19B2B2379E9006075F5 /* GameScene+Touch.swift */; };
 		8070A19E2B237A89006075F5 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070A19D2B237A89006075F5 /* Asteroid.swift */; };
 		8070A1A02B237E55006075F5 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070A19F2B237E55006075F5 /* Enemy.swift */; };
@@ -46,6 +47,7 @@
 		801414782B246F6400E8906E /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		8058B96A2B24CDC000BDDA9A /* GameScene+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Delegates.swift"; sourceTree = "<group>"; };
 		8058B96C2B24D2C000BDDA9A /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		8058B96E2B24E2D900BDDA9A /* GameScene+Collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Collisions.swift"; sourceTree = "<group>"; };
 		8070A19B2B2379E9006075F5 /* GameScene+Touch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Touch.swift"; sourceTree = "<group>"; };
 		8070A19D2B237A89006075F5 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
 		8070A19F2B237E55006075F5 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				80C5CB192B224412002B0F03 /* GameViewController.swift */,
 				80BDC6D02B2320FE00714272 /* GameScene.swift */,
+				8058B96E2B24E2D900BDDA9A /* GameScene+Collisions.swift */,
 				80BDC6D52B2331AC00714272 /* GameScene+Create.swift */,
 				8058B96A2B24CDC000BDDA9A /* GameScene+Delegates.swift */,
 				8070A19B2B2379E9006075F5 /* GameScene+Touch.swift */,
@@ -289,6 +292,7 @@
 				80C5CB1A2B224412002B0F03 /* GameViewController.swift in Sources */,
 				80C5CB122B224412002B0F03 /* AppDelegate.swift in Sources */,
 				80BDC6C92B2317F400714272 /* Background.swift in Sources */,
+				8058B96F2B24E2D900BDDA9A /* GameScene+Collisions.swift in Sources */,
 				80BDC6D32B23220800714272 /* Constants.swift in Sources */,
 				8070A1A02B237E55006075F5 /* Enemy.swift in Sources */,
 				8058B96B2B24CDC000BDDA9A /* GameScene+Delegates.swift in Sources */,

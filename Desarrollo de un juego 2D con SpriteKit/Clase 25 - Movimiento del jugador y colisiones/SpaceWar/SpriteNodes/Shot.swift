@@ -59,7 +59,7 @@ final class Shot: SKSpriteNode {
             physicsBody?.collisionBitMask = PhysicsCategory.none
         case .player:
             physicsBody = SKPhysicsBody(rectangleOf: size)
-            physicsBody?.categoryBitMask = PhysicsCategory.player
+            physicsBody?.categoryBitMask = PhysicsCategory.playerProjectile
             physicsBody?.contactTestBitMask = PhysicsCategory.enemy
             physicsBody?.collisionBitMask = PhysicsCategory.none
         }
