@@ -12,4 +12,7 @@ El juego cuenta con impresionantes gráficos y efectos visuales que sumergen a l
 
 En resumen, este juego en 2D para iOS con SpriteKit es una emocionante aventura espacial donde los jugadores deben enfrentar asteroides, naves enemigas y un poderoso jefe final. Con controles intuitivos, gráficos impresionantes y desafíos emocionantes, los jugadores emprenderán una misión espacial llena de acción y diversión. ¿Tienes lo que se necesita para salvar el universo y ganar el juego? ¡Demuestra tus habilidades en este emocionante juego espacial!
 
+<p><img src="https://github.com/ArtCC/course-udemy-develop-an-ios-2d-game/blob/main/Screenshots/1.PNG"></p>
+<p><img src="https://github.com/ArtCC/course-udemy-develop-an-ios-2d-game/blob/main/Screenshots/2.PNG"></p>
+
 ##### ArtCC 2023++
