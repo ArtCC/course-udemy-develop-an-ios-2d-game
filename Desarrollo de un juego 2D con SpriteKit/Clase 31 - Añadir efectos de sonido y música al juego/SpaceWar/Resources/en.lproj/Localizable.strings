@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SpaceWar
+
+  Created by Arturo Carretero Calvo on 8/12/23.
+*/
+
+"name.game.title.text" = "Space War";
+"play.button.text" = "PLAY GAME";
+"game.over.lose" = "Game Over";
+"game.over.win" = "You win!";
+"score.text" = "Score: %@";
