@@ -17,7 +17,9 @@ extension GameScene {
                     joystickIsActive = CGRectContainsPoint(joystick.frame, touchLocation)
                     selectedNodes[touch] = node
                 } else if node.name == Nodes.firePad.rawValue {
-                    player.shot()
+                    player.shot() { shot in
+                        self.boss.state = .evading(sprite: shot)
+                    }
                 }
             }
         }

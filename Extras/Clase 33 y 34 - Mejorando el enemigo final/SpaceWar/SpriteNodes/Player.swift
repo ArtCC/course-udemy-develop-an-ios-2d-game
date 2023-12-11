@@ -79,7 +79,7 @@ final class Player: SKSpriteNode {
         turboEnginePlayer.isHidden = true
     }
 
-    func shot() {
+    func shot(completion: (SKSpriteNode) -> Void) {
         let texture = SKTexture(imageNamed: Constants.Images.playerShot)
         let shot = Shot(texture: texture,
                         position: CGPoint(x: self.position.x + 50, y: self.position.y),
@@ -89,6 +89,8 @@ final class Player: SKSpriteNode {
         shot.movement()
 
         self.parent?.addChild(shot)
+
+        completion(shot)
     }
 
     private func setup(with position: CGPoint) {

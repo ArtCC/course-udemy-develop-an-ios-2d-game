@@ -33,6 +33,7 @@ final class GameScene: ParentScene {
             }
         }
     }
+    var boss = Boss()
     var bossIsCreate = false
 
     let joystickBase = SKSpriteNode(imageNamed: Constants.Images.joystickBase)

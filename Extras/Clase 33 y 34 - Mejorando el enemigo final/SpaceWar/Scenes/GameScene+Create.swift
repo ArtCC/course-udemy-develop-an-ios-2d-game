@@ -103,18 +103,19 @@ extension GameScene {
             bossIsCreate = true
 
             let texture = SKTexture(imageNamed: Constants.Images.boss)
-            let enemy = Boss(texture: texture)
-            enemy.name = Nodes.boss.rawValue
 
-            let randomY = CGFloat.random(in: enemy.size.height / 2...size.height - enemy.size.height / 2)
-            enemy.position = CGPoint(x: size.width + enemy.size.width / 2, y: randomY)
-            enemy.setScale(1.5)
+            boss = Boss(texture: texture)
+            boss.name = Nodes.boss.rawValue
 
-            enemy.addEngineFire(with: Constants.Textures.bossTurboEngine)
-            enemy.movement()
-            enemy.shot()
+            let randomY = CGFloat.random(in: boss.size.height / 2...size.height - boss.size.height / 2)
+            boss.position = CGPoint(x: size.width + boss.size.width / 2, y: randomY)
+            boss.setScale(1.5)
 
-            addChild(enemy)
+            boss.addEngineFire(with: Constants.Textures.bossTurboEngine)
+            boss.state = .patrolling
+            boss.shot()
+
+            addChild(boss)
         }
     }
 
